@@ -115,7 +115,9 @@ Complete Exercise 8 in the space below:
 */
 
 const foods = [ "taco", "pizza", "sushi", "cupcake", "cheeseburger", "tofu"];
-console.log(foods.indexOf("tofu"));
-
+const soyIdx = (foods.indexOf("tofu"));
+console.log(foods.indexOf('tofu'))
 // Print => 5, successfully printed. 
 // Remember you don't have to console.log again since the statement above is the console.log
+// Read the prompt carefully, this is asking to reassign the variable. 
+// To assign a new variable, set to const reference the first one. Example above.
