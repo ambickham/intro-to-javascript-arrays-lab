@@ -172,14 +172,14 @@ Hint: Initialize the `odds` variable to an empty array before the iteration.
 Complete Exercise 11 in the space below:
 */
 
-const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
-const odds = [];
-for (i = 0; i < nums.length; i++) {
-    if (nums[i] % 2 !==0){
-    odds.push(nums[i]);   }
-    } 
+// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+// const odds = [];
+// for (i = 0; i < nums.length; i++) {
+//     if (nums[i] % 2 !==0){
+//     odds.push(nums[i]);   }
+//     } 
 
-console.log('Exercise 11 result:', odds);
+// console.log('Exercise 11 result:', odds);
 // for is a keyword i < nums.length means keep going as long as i is less then the total number of items.
 // i++ means to add 1 each time loop runs to check the next numnber.
 //nums[i] means get the item at the next index 
@@ -187,10 +187,60 @@ console.log('Exercise 11 result:', odds);
 //Exercise 11 result: (8) [5, 23, 15, 21, 9, 45, 7, 81] 
 // Successfully completed! 
 
+// console.log('Exercise 11 result:', odds);
+/*
+Exercise 12: FizzBuzz with arrays
+
+1) Choose a method to iterate through the `nums` array.  -- **Selected For Of method** 
+
+2. As you loop, sort the numbers into new arrays based on the following rules:
+
+   - Push any number evenly divisible by 3 to an array called `fizz`. - succesful 
+   - Push any number evenly divisible by 5 to an array called `buzz`. - successful 
+   - Push any number that is evenly divisible by 3 and 5 to an array called
+     `fizzbuzz`. - successful 
+
+     Exercise 12 Results:
+    app.js:231   fizz: (5) [21, 72, 9, 66, 81]
+    app.js:232   buzz: (2) [100, 5]
+    app.js:233   fizzbuzz: (3) [15, 45, 90]
+
+   Note: A single number may meet more than one of the above rules. If it does,
+         it should be placed in multiple arrays. For example, the number `15`
+         will appear in the `fizz`, `buzz`, and `fizzbuzz` arrays.
+
+Complete Exercise 12 in the space below:
+Exercise 12 Results:
+    app.js:231   fizz: (5) [21, 72, 9, 66, 81]
+    app.js:232   buzz: (2) [100, 5]
+    app.js:233   fizzbuzz: (3) [15, 45, 90]
+*/
+
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+
+//Initialize the array first, don't forget the ; at the end of this statement 
+const fizzbuzz = []; // push numnbers / 3 and 5 
+const fizz = []; // push numbers /3
+const buzz = []; // push numbers /5
 
 
+for (const num of nums) {
+    if (num % 3 === 0 && num % 5 === 0){
+        fizzbuzz.push(num); // divisible by 3 & 5 
+    }
+    else if (num % 3 === 0){ // divisible by only 3
+        fizz.push(num);
+    } 
+    else if (num % 5 === 0) { // divisible by only 5
+        buzz.push(num);
+    } 
+    }
+
+console.log('Exercise 12 Results:');
+console.log('  fizz:', fizz);
+console.log('  buzz:', buzz);
+console.log('  fizzbuzz:', fizzbuzz);
 
 
-console.log('Exercise 11 result:', odds);
 
   
