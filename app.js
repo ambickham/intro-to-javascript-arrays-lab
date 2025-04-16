@@ -34,11 +34,26 @@
 // Complete Exercise 3 in the space below:
 // */
 
-// // NOTE: To add an item to the beginning, it's .unshift()
+// NOTE: To add an item to the beginning, it's .unshift()
 
-const foods = [];  
-foods.push('pizza');
-foods.push('cheeseburger');
-foods.unshift('taco');
-console.log('Exercise 2 result:', foods);
-console.log('Exercise 3 result:', foods);
+// const foods = [];  
+// foods.push('pizza');
+// foods.push('cheeseburger');
+// foods.unshift('taco');
+// console.log('Exercise 2 result:', foods);
+// console.log('Exercise 3 result:', foods);
+
+/*
+Exercise 4: Access an array element
+
+1) Retrieve the 'pizza' string from the array based on its position (index) in
+   the array.  
+
+2) Assign it to a variable called `favFood`.
+
+Complete Exercise 4 in the space below:
+*/
+
+const foods = [ "taco", "pizza", "cheeseburger"] // Defining a variable 
+const favFood= foods [1] // Accessing an element from that array foods [1] and assigning another variable to favFood 
+console.log('Exercise 4 result:', favFood); // calling the result 
