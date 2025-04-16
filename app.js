@@ -102,3 +102,20 @@ Complete Exercise 7 in the space below:
 // Continue to check spelling 
 // Always check semicolon at the end to finish the command. 
 // Remember that the index starts at 1, and by referencing the index as in this example, that's the object that I'm extracting. 
+
+/*
+Exercise 8: Finding an index
+
+1) Using the `indexOf()` method, find the index of the string 'tofu' in the 
+   `foods` array. 
+
+2) Assign it to a variable named `soyIdx`.
+
+Complete Exercise 8 in the space below:
+*/
+
+const foods = [ "taco", "pizza", "sushi", "cupcake", "cheeseburger", "tofu"];
+console.log(foods.indexOf("tofu"));
+
+// Print => 5, successfully printed. 
+// Remember you don't have to console.log again since the statement above is the console.log
