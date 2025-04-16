@@ -114,10 +114,30 @@ Exercise 8: Finding an index
 Complete Exercise 8 in the space below:
 */
 
-const foods = [ "taco", "pizza", "sushi", "cupcake", "cheeseburger", "tofu"];
-const soyIdx = (foods.indexOf("tofu"));
-console.log(foods.indexOf('tofu'))
+// const foods = [ "taco", "pizza", "sushi", "cupcake", "cheeseburger", "tofu"];
+// const soyIdx = (foods.indexOf("tofu"));
+// console.log(foods.indexOf('tofu'))
 // Print => 5, successfully printed. 
 // Remember you don't have to console.log again since the statement above is the console.log
 // Read the prompt carefully, this is asking to reassign the variable. 
 // To assign a new variable, set to const reference the first one. Example above.
+
+/*
+Exercise 9: Joining elements
+
+1) Use the `join()` method to concatenate the strings in the `foods` array, 
+   separated by ' -> '. 
+
+2) Assign the result to a variable called `allFoods`. 
+
+Note: The final result should log as:
+'taco -> sushi -> cupcake -> tofu -> cheeseburger'
+
+Complete Exercise 9 in the space below:
+*/
+const foods = ["taco", "sushi", "cupcake", "tofu", "cheeseburger"];
+const allFoods = foods.join(" -> ");
+console.log('Exercise 9 result:', allFoods);
+
+//Exercise 9 result: taco -> sushi -> cupcake -> tofu -> cheeseburger
+// Notes foods.join(), arrays are [] not (), check spelling always 
