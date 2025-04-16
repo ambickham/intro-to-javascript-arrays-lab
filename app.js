@@ -67,6 +67,18 @@ Complete Exercise 5 in the space below:
 */
 
 
+// const foods = [ "taco", "pizza","cheeseburger"];
+// foods.splice(2,0,"tofu");
+// console.log('Exercise 5 result:', foods);
+// Notes: use .splace to insert or remove. if foods.splice is called, it's only going to tell me what item was deleted not what's added"
+
+/*
+Exercise 6: Replace elements
+
+1) Replace 'pizza' in the `foods` array with 'sushi' and 'cupcake'.
+
+Complete Exercise 6 in the space below:
+*/
 const foods = [ "taco", "pizza","cheeseburger"];
-foods.splice(2,0,"tofu");
-console.log('Exercise 5 result:', foods);
+foods.splice (1,1, "sushi", "cupcake");
+console.log('Exercise 6 result:', foods);
