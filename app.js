@@ -78,7 +78,27 @@ Exercise 6: Replace elements
 1) Replace 'pizza' in the `foods` array with 'sushi' and 'cupcake'.
 
 Complete Exercise 6 in the space below:
+// */
+// const foods = [ "taco", "pizza","cheeseburger"];
+// foods.splice (1,1, "sushi", "cupcake");
+// console.log('Exercise 6 result:', foods);
+// I did not need to include "pizza" in the () since the other items were going to replace it. By keeping pizza, I actually ended up insertig it back in. 
+/*
+Exercise 7: Using the `slice()` method
+
+1) Use the `slice()` method to create a new array that contains 'sushi' and 
+   'cupcake'.
+
+2) Assign it to a variable named `yummy`.
+
+Complete Exercise 7 in the space below:
 */
-const foods = [ "taco", "pizza","cheeseburger"];
-foods.splice (1,1, "sushi", "cupcake");
-console.log('Exercise 6 result:', foods);
+
+// const foods = [ "taco", "pizza", "sushi", "cupcake", "cheeseburger"];
+// const yummy = foods.slice (2,4);
+// console.log('Exercise 7 result:', yummy);
+//Exercise 7 result: (2) ['sushi', 'cupcake']
+// Notes: I interpretted this as first I need to add, but I should have assumed that sushi an cupcake were already there, since I'm asked to use the slice operation. 
+// Continue to check spelling 
+// Always check semicolon at the end to finish the command. 
+// Remember that the index starts at 1, and by referencing the index as in this example, that's the object that I'm extracting. 
