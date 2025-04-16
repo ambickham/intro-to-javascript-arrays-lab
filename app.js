@@ -153,9 +153,44 @@ Exercise 10: Check for an element
 Complete Exercise 10 in the space below:
 */
 
-const foods = ["taco", "sushi", "cupcake", "tofu", "cheeseburger"];
-const hasSoup = foods.includes("soup");
-console.log('Exercise 10 result:', hasSoup);
+// const foods = ["taco", "sushi", "cupcake", "tofu", "cheeseburger"];
+// const hasSoup = foods.includes("soup");
+// console.log('Exercise 10 result:', hasSoup);
 //Exercise 10 result: false, successfully printed! 
 // Notes: Spelling all good! ; checked! 
 // foods.includes has a () not a []
+
+/*
+Exercise 11: Odd numbers from an array
+
+1) Choose a method to iterate through the `nums` array.
+
+2) Push each odd number to a new array named `odds`.
+
+Hint: Initialize the `odds` variable to an empty array before the iteration.
+
+Complete Exercise 11 in the space below:
+*/
+
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+const odds = [];
+for (i = 0; i < nums.length; i++) {
+    if (nums[i] % 2 !==0){
+    odds.push(nums[i]);   }
+    } 
+
+console.log('Exercise 11 result:', odds);
+// for is a keyword i < nums.length means keep going as long as i is less then the total number of items.
+// i++ means to add 1 each time loop runs to check the next numnber.
+//nums[i] means get the item at the next index 
+//% modulus operator which gives remainder
+//Exercise 11 result: (8) [5, 23, 15, 21, 9, 45, 7, 81] 
+// Successfully completed! 
+
+
+
+
+
+console.log('Exercise 11 result:', odds);
+
+  
