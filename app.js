@@ -134,10 +134,28 @@ Note: The final result should log as:
 'taco -> sushi -> cupcake -> tofu -> cheeseburger'
 
 Complete Exercise 9 in the space below:
-*/
-const foods = ["taco", "sushi", "cupcake", "tofu", "cheeseburger"];
-const allFoods = foods.join(" -> ");
-console.log('Exercise 9 result:', allFoods);
+// */
+// const foods = ["taco", "sushi", "cupcake", "tofu", "cheeseburger"];
+// const allFoods = foods.join(" -> ");
+// console.log('Exercise 9 result:', allFoods);
 
 //Exercise 9 result: taco -> sushi -> cupcake -> tofu -> cheeseburger
 // Notes foods.join(), arrays are [] not (), check spelling always 
+
+/*
+Exercise 10: Check for an element
+
+1) Using the .includes() method, check if the `foods` array contains the string
+   'soup'.
+
+2) Assign the result to a variable called `hasSoup``.
+
+Complete Exercise 10 in the space below:
+*/
+
+const foods = ["taco", "sushi", "cupcake", "tofu", "cheeseburger"];
+const hasSoup = foods.includes("soup");
+console.log('Exercise 10 result:', hasSoup);
+//Exercise 10 result: false, successfully printed! 
+// Notes: Spelling all good! ; checked! 
+// foods.includes has a () not a []
