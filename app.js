@@ -51,9 +51,22 @@ Exercise 4: Access an array element
 
 2) Assign it to a variable called `favFood`.
 
-Complete Exercise 4 in the space below:
+// Complete Exercise 4 in the space below:
+// */
+
+// const foods = [ "taco", "pizza", "cheeseburger"] // Defining a variable 
+// const favFood= foods [1] // Accessing an element from that array foods [1] and assigning another variable to favFood 
+// console.log('Exercise 4 result:', favFood); // calling the result 
+
+/*
+Exercise 5: Insert an element between two others
+
+1) Insert the string 'tofu' between 'pizza' and 'cheeseburger' in the array.
+
+Complete Exercise 5 in the space below:
 */
 
-const foods = [ "taco", "pizza", "cheeseburger"] // Defining a variable 
-const favFood= foods [1] // Accessing an element from that array foods [1] and assigning another variable to favFood 
-console.log('Exercise 4 result:', favFood); // calling the result 
+
+const foods = [ "taco", "pizza","cheeseburger"];
+foods.splice(2,0,"tofu");
+console.log('Exercise 5 result:', foods);
