@@ -295,7 +295,7 @@ Exercise 15: Nested array sum
    
 2) Assign the sum to a variable called `total`.
 
-Hint: Be sure to declare and initialize the total variable before the iterations.
+Be sure to declare and initialize the total variable before the iterations.
 
 Complete Exercise 15 in the space below:
 */
@@ -316,76 +316,3 @@ Complete Exercise 15 in the space below:
 
 // console.log('Exercise 15 result:', total);
 
-/* To count how many Pokémon are currently in your party.
-Accessing an array’s length.
-
-Creating a method in an object.
-
-Returning a value (instead of logging it).
-
-Using this to reference the object the method is inside of.
-Adds a method called partyCount to the game object.
-
-Uses this.party.length to count how many Pokémon are in the party.
-
-Returns that number (does not log it).
-Inside a method of an object, this refers to the object itself — so this.party is the same as game.party inside the method.
-
-/*
-Exercise 15
-1. Now, complete gyms with a difficulty below 8. Reflect on how this is similar to or different from the previous gym exercises.
-(change the value of `complete` in the qualifying objects from false to true).
-
-// Solve Exercise 15 here:
-*/
-const game = {
-    gyms: [
-      { location: 'Pewter City', completed: false, difficulty: 1 },
-      { location: 'Cerulean City', completed: false, difficulty: 2 },
-      { location: 'Vermilion City', completed: false, difficulty: 3 },
-      { location: 'Celadon City', completed: false, difficulty: 4 },
-      { location: 'Fuchsia City', completed: false, difficulty: 5 },
-      { location: 'Saffron City', completed: false, difficulty: 6 },
-      { location: 'Cinnabar Island', completed: false, difficulty: 7 },
-      { location: 'Viridian City', completed: false, difficulty: 8 }
-    ],
-    
-    gymStatus: function() {
-      // Initialize tally
-      const gymTally = {
-        completed: 0,
-        incomplete: 0
-      };
-    
-      // Iterate over each gym
-      this.gyms.forEach(gym => {
-        if (gym.completed === true) {
-          gymTally.completed++;
-        } else {
-          gymTally.incomplete++;
-        }
-      });
-    
-      // Log the result
-      console.log(gymTally);
-    }
-  };
-  
-  // Update gyms with difficulty < 8
-  game.gyms.forEach(gym => {
-    if (gym.difficulty < 8) {
-      gym.completed = true;  // Mark as completed if difficulty < 8
-    }
-  });
-  
-  // Print the gyms array
-  console.log(game.gyms);
-  
-  // Call gymStatus to log the updated tally of completed and incomplete gyms
-  game.gymStatus();
-  
-  // Log the entire game object (this will show gyms and other properties)
-  console.log(game);
-  
-  // Successfully printed completed 7, incomplete 1
-  
